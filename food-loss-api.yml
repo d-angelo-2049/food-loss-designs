@@ -1,0 +1,271 @@
+openapi: 3.0.3
+info:
+  title: Food Loss - OpenAPI 3.0
+  description: |-
+    This is a sample Food Loss Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the food loss, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    Some useful links:
+    - [The Food Loss General Design repository](https://github.com/d-angelo-2049/food-loss-designs)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://foodloss/api/v1
+tags:
+  - name: food
+    description: Everything about food to remember its existence
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+paths:
+  /food:
+    put:
+      tags:
+        - food
+      summary: Update an existing food
+      description: Update an existing food by Id
+      operationId: updateFood
+      requestBody:
+        description: Update an existent food in the pantry
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Food"
+        required: true
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Food"
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Food not found
+        "405":
+          description: Validation exception
+      security:
+        - food_auth:
+            - write:foods
+            - read:foods
+    post:
+      tags:
+        - food
+      summary: Add a new food to the pantry
+      description: Add a new food to the pantry
+      operationId: addFood
+      requestBody:
+        description: Create a new food in the pantry
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Food"
+        required: true
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Food"
+        "405":
+          description: Invalid input
+      security:
+        - food_auth:
+            - write:foods
+            - read:foods
+  /food/dangerList:
+    get:
+      tags:
+        - food
+      summary: foods that are close to their expiration or consumption dates.
+      description: foods that are close to their expiration or consumption dates.
+      operationId: dangerList
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: false
+          explode: true
+          schema:
+            type: string
+            default: available
+            enum:
+              - available
+              - pending
+              - sold
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Food"
+        "400":
+          description: Invalid status value
+      security:
+        - food_auth:
+            - write:foods
+            - read:foods
+
+  /food/{foodId}:
+    get:
+      tags:
+        - food
+      summary: Find food by ID
+      description: Returns a single food
+      operationId: getFoodById
+      parameters:
+        - name: foodId
+          in: path
+          description: ID of food to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Food"
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Food not found
+      security:
+        - api_key: []
+        - food_auth:
+            - write:foods
+            - read:foods
+    post:
+      tags:
+        - food
+      summary: Updates a food in the store with form data
+      description: ""
+      operationId: updateFoodWithForm
+      parameters:
+        - name: foodId
+          in: path
+          description: ID of food that needs to be updated
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: name
+          in: query
+          description: Name of food that needs to be updated
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Status of food that needs to be updated
+          schema:
+            type: string
+      responses:
+        "405":
+          description: Invalid input
+      security:
+        - food_auth:
+            - write:food
+            - read:food
+    delete:
+      tags:
+        - food
+      summary: Deletes a food
+      description: delete a food
+      operationId: deleteFood
+      parameters:
+        - name: api_key
+          in: header
+          description: ""
+          required: false
+          schema:
+            type: string
+        - name: foodId
+          in: path
+          description: Food id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "400":
+          description: Invalid food value
+      security:
+        - food_auth:
+            - write:foods
+            - read:foods
+
+components:
+  schemas:
+    Food:
+      required:
+        - name
+        - photoUrls
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        name:
+          type: string
+          example: doggie
+        photoUrls:
+          type: array
+          items:
+            type: string
+        status:
+          type: string
+          description: food status in the store
+          enum:
+            - available
+            - pending
+            - sold
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+      xml:
+        name: "##default"
+  requestBodies:
+    Food:
+      description: Food object that needs to be added to the store
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Food"
+  securitySchemes:
+    food_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://foodloss.swagger.io/oauth/authorize
+          scopes:
+            write:foods: modify food in your account
+            read:foods: read your food
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
