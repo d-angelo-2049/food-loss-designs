@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-04T07:54:44.892Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="YXC-0FHFPwmopvyUiSDq" version="21.6.6" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-08-04T07:55:07.742Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="HTUHxIH5x8n7H1hy5VwH" version="21.6.6" type="github" pages="9">
   <diagram id="OKpxKQ5qW-txcoddOYpn" name="grand-design">
     <mxGraphModel dx="1518" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -291,7 +291,7 @@
         <mxCell id="5twbG9-PS1Rp437T3403-14" value="食べられない状態" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="230" y="-930" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="5twbG9-PS1Rp437T3403-16" value="廃棄" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="5twbG9-PS1Rp437T3403-16" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;廃棄&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="430" y="-930" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5twbG9-PS1Rp437T3403-24" value="家の人" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
