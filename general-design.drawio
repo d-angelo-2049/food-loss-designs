@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-04T13:26:42.271Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="4Fl-QCJ9ogMISyq8PFDf" version="21.6.6" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-08-04T13:31:33.964Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="4l2c9I7g8GA5RIjHENbX" version="21.6.6" type="github" pages="9">
   <diagram id="OKpxKQ5qW-txcoddOYpn" name="grand-design">
     <mxGraphModel dx="1518" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -250,7 +250,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Kvq67uRGnCutld_8vQDg" name="state-machine">
-    <mxGraphModel dx="1075" dy="2943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1518" dy="1966" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -258,7 +258,7 @@
           <mxGeometry x="190" y="-1090" width="250" height="180" as="geometry" />
         </mxCell>
         <mxCell id="DFAf8fZzMbvYM4dDlT9r-2" value="システムの前段の話&lt;br&gt;ドメイン分析をする&lt;br&gt;家に食品を買ってきてから、調理して消費または廃棄するまでのストーリ&lt;br&gt;なぜこのシステムにしたかの説明をする図にする" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1130" y="-1170" width="150" height="110" as="geometry" />
+          <mxGeometry x="1170" y="-1170" width="150" height="110" as="geometry" />
         </mxCell>
         <mxCell id="DFAf8fZzMbvYM4dDlT9r-3" value="ドメイン分析をする&lt;br&gt;サブシステムが複数あってそれらが強調されてる図を目指す&lt;br&gt;例えば、家の人、食品置き場(冷蔵庫)&lt;br&gt;&lt;br&gt;家の人が忘れたら食品がどうなるか？&lt;br&gt;原因分析&lt;br&gt;因果関係のあるシステム同士を同期させる&lt;br&gt;廃棄に至らないようなシステム&lt;br&gt;シナリオを一覧化する&lt;br&gt;シーケンス図でシナリオを表現する。&lt;br&gt;&lt;br&gt;忘れたみたいなことを明示的に書いても良さそう。&lt;br&gt;提案しているアイデアを裏付けるための図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1100" y="-1060" width="280" height="220" as="geometry" />
@@ -268,9 +268,6 @@
         </mxCell>
         <mxCell id="5twbG9-PS1Rp437T3403-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="120" y="-1015" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="5twbG9-PS1Rp437T3403-3" value="想定シナリオ１&lt;br&gt;調理で使ったが、次いつ使うかわからず保管していた。&lt;br&gt;時間が経って使おうとした際に期限切れと気づいて廃棄になる。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="20" y="-1209" width="420" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5twbG9-PS1Rp437T3403-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.999;exitY=0.183;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="4gZpFsjJJC8JoJYQfuO4-50" edge="1" target="4gZpFsjJJC8JoJYQfuO4-1">
           <mxGeometry relative="1" as="geometry">
@@ -389,7 +386,7 @@
         <mxCell id="WFQUBJ3oFSNjdyzNULIu-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5twbG9-PS1Rp437T3403-27" target="5twbG9-PS1Rp437T3403-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WFQUBJ3oFSNjdyzNULIu-74" value="時間が経過して食べられなくなる背景&lt;br&gt;消費期限を把握できてない。&lt;br&gt;中途半端に残っていることを忘れている。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="WFQUBJ3oFSNjdyzNULIu-74" value="時間が経過して食べられなくなる背景&lt;br&gt;消費期限を把握できてない。&lt;br&gt;中途半端に残っていることを忘れている。&lt;br&gt;明日食べようと思っていた残りを忘れる。&lt;br&gt;予想より腐敗の進行が早かった" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="680" y="-1123" width="260" height="130" as="geometry" />
         </mxCell>
         <mxCell id="4gZpFsjJJC8JoJYQfuO4-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
