@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-10T03:04:31.406Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="RgrEktN0_lzqCgPnEH0P" version="21.6.6" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-08-10T09:56:31.257Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="0K9h2ICZe0Y_w6HQ3CrT" version="21.6.6" type="github" pages="9">
   <diagram id="OKpxKQ5qW-txcoddOYpn" name="grand-design">
-    <mxGraphModel dx="2345" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1985" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -351,7 +351,7 @@
           <mxGeometry x="455" y="-880" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5twbG9-PS1Rp437T3403-32" value="調理に使う" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="480" y="-1090" width="110" height="30" as="geometry" />
+          <mxGeometry x="465" y="-1090" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5twbG9-PS1Rp437T3403-33" value="残りを保管する" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="259" y="-1137" width="110" height="30" as="geometry" />
