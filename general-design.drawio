@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-10T01:56:27.160Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="a3M341w0NuRlXUmv33Zw" version="21.6.6" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-08-10T03:04:31.406Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="RgrEktN0_lzqCgPnEH0P" version="21.6.6" type="github" pages="9">
   <diagram id="OKpxKQ5qW-txcoddOYpn" name="grand-design">
     <mxGraphModel dx="2345" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
@@ -250,7 +250,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Kvq67uRGnCutld_8vQDg" name="state-machine">
-    <mxGraphModel dx="1075" dy="1743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="890" dy="1649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -428,8 +428,8 @@
         <mxCell id="4gZpFsjJJC8JoJYQfuO4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="4gZpFsjJJC8JoJYQfuO4-13" target="4gZpFsjJJC8JoJYQfuO4-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="820" y="-600" />
-              <mxPoint x="820" y="-580" />
+              <mxPoint x="810" y="-600" />
+              <mxPoint x="810" y="-580" />
             </Array>
           </mxGeometry>
         </mxCell>
